@@ -6,15 +6,15 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Palestine Profile Pic Maker 🇵🇸',
+  title: 'Vote for MERA25',
   description:
-    'Frame your profile with the colors of Palestine. Let your profile picture speak volumes for peace and justice. #IStandWithPalestine',
+    'Frame your profile with "I Vote for MERA25". Let your profile picture show your support for MERA25.',
   metadataBase: new URL('https://ppm.techforpalestine.org'),
   openGraph: {
-    title: 'Palestine Profile Pic Maker 🇵🇸',
-    description: 'Create your Palestine profile picture to show your support',
-    siteName: 'Palestine Profile Pic Maker 🇵🇸',
-    images: '/social-card.png',
+    title: 'Vote for MERA25',
+    description: 'Create your MERA25 profile picture to show your support',
+    siteName: 'Vote for MERA25',
+    images: '/vote-for-mera.jpg',
   },
 };
 

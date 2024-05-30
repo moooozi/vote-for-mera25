@@ -114,7 +114,7 @@ export default function Home() {
             <p>Please open on regular browsers like Chrome or Safari.</p>
           </div>
         )}
-        {gazaStatusSummary && (
+        { /* gazaStatusSummary && (
           <a
             className="rounded-lg bg-gray-200 py-1.5 px-4 text-sm text-gray-800 cursor-pointer"
             target="_blank"
@@ -122,21 +122,20 @@ export default function Home() {
           >
             😥 {gazaStatusSummary} →
           </a>
-        )}
-        <h1 className="font-semibold text-3xl mt-6">Show Solidarity 🇵🇸</h1>
+        ) */} 
+        <h1 className="font-semibold text-3xl mt-6">Vote for MERA25</h1>
         <p className="text-lg py-2">
-          Let&apos;s unite in our profile pictures to spotlight the cause. ✊
+        Create your MERA25 profile picture to show your support
         </p>
         <p className="text-gray-600">
-          Watch the{' '}
+          Read our {' '}
           <a
-            href="https://www.instagram.com/p/C2B1DP0LqBl/"
+            href="https://mera25.de/election-programme-eu2024/"
             target="_blank"
             className="underline cursor-pointer hover:text-gray-900"
           >
-            step-by-step guide
+            election programme
           </a>{' '}
-          👀
         </p>
         <div className="my-12">
           <div className="flex justify-center">
@@ -146,16 +145,7 @@ export default function Home() {
               ref={ref}
             >
               {/* eslint-disable-next-line */}
-              <Image
-                width={100}
-                height={100}
-                alt="border"
-                id="borderImage"
-                src={'/bg.webp'}
-                style={{ position: 'absolute', width: '100%', height: '100%' }}
-                className="rounded-full"
-                unoptimized
-              />
+
               {loader ? (
                 <Image
                   id="spinner"
@@ -165,10 +155,10 @@ export default function Home() {
                   height={100}
                   style={{
                     position: 'absolute',
-                    width: '85%',
-                    height: '85%',
-                    left: '7.5%',
-                    top: '7.5%',
+                    width: '80%',
+                    height: '80%',
+                    left: '10%',
+                    top: '10%',
                   }}
                   className="object-cover rounded-full cursor-wait"
                 />
@@ -181,14 +171,25 @@ export default function Home() {
                   height={100}
                   style={{
                     position: 'absolute',
-                    width: '85%',
-                    height: '85%',
-                    left: '7.5%',
-                    top: '7.5%',
+                    width: '78%',
+                    height: '78%',
+                    left: '11%',
+                    top: '11%',
                   }}
                   className="object-cover rounded-full cursor-pointer"
                 />
+                
               )}
+                            <Image
+                width={100}
+                height={100}
+                alt="border"
+                id="borderImage"
+                src={'/banner.png'}
+                style={{ position: 'absolute', width: '100%', height: '100%' }}
+                className="rounded-full"
+                unoptimized
+              />
             </div>
           </div>
         </div>
@@ -261,24 +262,24 @@ export default function Home() {
             will be saved by the app.
           </p>
           <p className="text-gray-600">
-            Have any feedback?{' '}
+            This website is based on a an open-source project by{' '}
             <a
-              href="https://www.x.com/sohafidz"
+              href="https://github.com/TechForPalestine/profile-pic-maker"
               target="_blank"
               className="underline cursor-pointer"
             >
-              Let me know!
+              Tech for Palastine
             </a>
           </p>
           <p className="text-gray-600">
-            For any bugs, please report them to our{' '}
+            See the original website: {' '}
             <a
-              href="https://github.com/TechForPalestine/palestine-pfp-maker/issues"
+              href="https://ppm.techforpalestine.org/"
               target="_blank"
               className="underline cursor-pointer"
             >
               {' '}
-              GitHub repository.
+              Show Solidarity 🇵🇸.
             </a>
           </p>
         </div>
