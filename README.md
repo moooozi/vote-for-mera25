@@ -12,7 +12,7 @@ docker run -d \
   -v /path/to/project/vote-for-mera25:/usr/src/app \
   -w /usr/src/app \
   -p 3000:3000 \
-  --name your_container_name \
+  --name vote-for-mera25 \
   node:22-alpine \
   sh -c "npm ci && npm run dev"
 ```
