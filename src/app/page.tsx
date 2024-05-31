@@ -114,7 +114,7 @@ export default function Home() {
             <p>Please open on regular browsers like Chrome or Safari.</p>
           </div>
         )}
-        { /* gazaStatusSummary && (
+        {/* gazaStatusSummary && (
           <a
             className="rounded-lg bg-gray-200 py-1.5 px-4 text-sm text-gray-800 cursor-pointer"
             target="_blank"
@@ -122,13 +122,13 @@ export default function Home() {
           >
             😥 {gazaStatusSummary} →
           </a>
-        ) */} 
+        ) */}
         <h1 className="font-semibold text-3xl mt-6">Vote for MERA25</h1>
         <p className="text-lg py-2">
-        Create your MERA25 profile picture to show your support
+          Create your MERA25 profile picture to show your support
         </p>
         <p className="text-gray-600">
-          Read our {' '}
+          Read our{' '}
           <a
             href="https://mera25.de/election-programme-eu2024/"
             target="_blank"
@@ -178,9 +178,8 @@ export default function Home() {
                   }}
                   className="object-cover rounded-full cursor-pointer"
                 />
-                
               )}
-                            <Image
+              <Image
                 width={100}
                 height={100}
                 alt="border"
@@ -272,7 +271,7 @@ export default function Home() {
             </a>
           </p>
           <p className="text-gray-600">
-            See the original website: {' '}
+            See the original website:{' '}
             <a
               href="https://ppm.techforpalestine.org/"
               target="_blank"
