@@ -4,16 +4,20 @@
 
 Deploy as Docker container:
 
-   ```
-   docker run -d \
-     -e ENV_VAR_NAME=value \
-     -p host_port:container_port \
-     -v host_volume:container_volume \
-     --name container_name \
-     --network network_name \
-     --restart always \
-     image_name:tag
-   ```
+1. Copy the project directory to the desired location (e.g. `/path/to/project/vote-for-mera25`)
+
+2. Deploy the container.
+```
+docker run -d \
+  -v /path/to/project/vote-for-mera25:/usr/src/app \
+  -w /usr/src/app \
+  -p 3000:3000 \
+  --name your_container_name \
+  node:22-alpine \
+  sh -c "npm ci && npm run dev"
+```
+
+Replace `/path/to/project/vote-for-mera25` with the actual path of the project.
 
 ## License
 
